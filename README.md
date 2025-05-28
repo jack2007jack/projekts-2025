@@ -25,6 +25,14 @@ Kods tiek analizēts pēc aizstavēšanas.
 
 ## Testēšana (0.5pt)
 - Testēšana - 2 veiksmes scenāriji
+- 1. Zinot, ka spēlētājs nekustas no sākuma pozīcijas, spēlētāja simbols atrodas centrā (6, 6).
+- 2. Zinot, ka pēc pietiekama soļu skaita moves_number >= exit_spawn, tad tiek izsaukta funkcija add_exit() un kartes centrā parādās izejas simbols (6, 6).
 - Testēšana - 4 lietošanas scenāriji
+- 1. Zinot, ka, kad spēlētājs nonāk tajā pašā šūnā, kur atrodas monstrs, tad parādīts zaudējumu ekrāns self.death_screen().
+  2. Zinot, ka spēle tiek atsākta pēc sevis uzvaras vai zaudēšanas self.__init__(), tad tiek parādīts self.intro_screen().
+  3. Zinot, ka, ievadot taustiņus w; a; s; d, tad spēlētājs pārvietojas noteiktā virzienā, ja nav šķēršļu.
+  4. Zinot, ka spēlētājs spēlē, līdz parādās izeja add_exit(), tad tiek parādīts uzvaras ekrāns self.win_screen().
 - Testēšana - 2 robež-scenāriji
+- 1. Zinot, ka monstors cenšas parādīties tuvāk spēlētājam nekā 8 šūniņas self.add_monster(), tad šī pozīcija tiek ignorēta un tiek izvēlēta pieņemama.
+  2. Zinot, ka spēlētājs mēģina iekļūt šūnā ar žoga simbolu FENCE_SYMBOL, tad gājiens netiek veikts un parādās zaudējuma ekrāns self.death_screen().
 - Testēšana - 4 automatizēti testi (pytest bilbiotēka)
