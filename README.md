@@ -25,7 +25,7 @@ Kods tiek analizēts pēc aizstavēšanas.
 
 ## Testēšana (0.5pt)
 - Testēšana - 2 veiksmes scenāriji
-- 1. Zinot, ka spēlētājs nekustas no sākuma pozīcijas, spēlētāja simbols atrodas centrā (6, 6).
+- 1. Zinot, ka spēlētājs nekustas no sākuma pozīcijas, tad spēlētāja simbols atrodas centrā (6, 6).
 - 2. Zinot, ka pēc pietiekama soļu skaita moves_number >= exit_spawn, tad tiek izsaukta funkcija add_exit() un kartes centrā parādās izejas simbols (6, 6).
 - Testēšana - 4 lietošanas scenāriji
 - 1. Zinot, ka, kad spēlētājs nonāk tajā pašā šūnā, kur atrodas monstrs, tad parādīts zaudējumu ekrāns self.death_screen().
